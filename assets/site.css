@@ -63,6 +63,22 @@ header.top nav a:hover { text-decoration: underline; }
 }
 .badge.soon { opacity: 0.75; }
 
+/* The selling points, right under the headline. */
+.highlights { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; list-style: none; padding: 0; margin: 0 auto 26px; max-width: 900px; }
+.highlights li {
+	padding: 6px 14px; border-radius: 12px; background: var(--yellow); border: 2px solid var(--plum);
+	font-weight: 600; font-size: 17px; line-height: 1.3;
+}
+.highlights li::before { content: "✓"; font-weight: 700; margin-right: 6px; }
+
+.grownups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 12px 28px; padding: 0; margin: 0; list-style: none; }
+.grownups li { padding-left: 34px; position: relative; }
+.grownups li::before {
+	content: ""; position: absolute; left: 0; top: 4px; width: 22px; height: 22px; border-radius: 50%;
+	background: var(--yellow); border: 3px solid var(--plum);
+}
+.grownups li b { display: block; }
+
 section { padding: 48px 0; }
 section h2 { font-size: 34px; line-height: 1.2; margin: 0 0 18px; font-weight: 600; }
 
